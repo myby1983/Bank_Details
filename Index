@@ -1,29 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Booth Verification System</title>
-  <style>
-    html, body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-    }
 <iframe
   id="bankFormFrame"
-  src="https://script.google.com/macros/s/AKfycbyoqt0YOkYx1u71rd3oTWsjoJ8ZCrTw7teAzcTPmzBiR0anO8x6n0BJ7NTk9UBahea-/exec"
+  src="https://script.google.com/macros/s/AKfycbwOoqpWA0-Mann373teGbwmzkdbFrPFqz0dCizU40RrZ0_qDGRTR_7SxzyQ-p9N3vgh/exec"
   width="100%"
-  style="border:0; min-height:520px; border-radius:16px;"
+  style="width:100%; border:0; display:block; min-height:620px;"
   scrolling="no">
 </iframe>
 
 <script>
 window.addEventListener('message', function (e) {
   if (e.data && e.data.type === 'resize' && e.data.height) {
-    const frame = document.getElementById('bankFormFrame');
-    frame.style.height = e.data.height + 'px';
+    document.getElementById('bankFormFrame').style.height = e.data.height + 'px';
   }
 });
 </script>
-</html>
