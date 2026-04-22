@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booth Verification System</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbyoqt0YOkYx1u71rd3oTWsjoJ8ZCrTw7teAzcTPmzBiR0anO8x6n0BJ7NTk9UBahea-/exec"></iframe>
+</body>
+</html>
