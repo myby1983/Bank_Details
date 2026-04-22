@@ -10,14 +10,20 @@
       width: 100%;
       height: 100%;
     }
-    iframe {
-      width: 100%;
-      height: 100vh;
-      border: 0;
-    }
-  </style>
-</head>
-<body>
-  <iframe src="https://script.google.com/macros/s/AKfycbyoqt0YOkYx1u71rd3oTWsjoJ8ZCrTw7teAzcTPmzBiR0anO8x6n0BJ7NTk9UBahea-/exec"></iframe>
-</body>
+<iframe
+  id="bankFormFrame"
+  src="https://script.google.com/macros/s/AKfycbyoqt0YOkYx1u71rd3oTWsjoJ8ZCrTw7teAzcTPmzBiR0anO8x6n0BJ7NTk9UBahea-/exec"
+  width="100%"
+  style="border:0; min-height:520px; border-radius:16px;"
+  scrolling="no">
+</iframe>
+
+<script>
+window.addEventListener('message', function (e) {
+  if (e.data && e.data.type === 'resize' && e.data.height) {
+    const frame = document.getElementById('bankFormFrame');
+    frame.style.height = e.data.height + 'px';
+  }
+});
+</script>
 </html>
